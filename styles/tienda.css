@@ -1,0 +1,33 @@
+@import url(styles.css);
+@import url(hero.css);
+@import url(galeria.css);
+
+.todosproductos {
+    text-align: center;
+
+    .productos {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+        flex-wrap: wrap;
+
+        .producto {
+            width: 23%;
+            min-width: 250px;
+            margin: 15px 0;
+            padding: 10px 12px;
+            border-radius: 20px;
+            border: 1px solid #cce7d0;
+            cursor: pointer;
+
+             & img {
+                width: 100%;
+                border-radius: 20px;
+            }
+
+        }
+
+    }
+}
+
+

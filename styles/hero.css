@@ -1,0 +1,38 @@
+.hero {
+    background-image: url('../imagenes/hero1.jpg');
+    height: 690px;
+    width: 89.5%;
+    background-size: cover;
+    background-position: top 50% center;
+    padding: 0 80px;
+    display: grid;
+    align-items: center;
+    justify-content: flex-end;
+    
+    }
+
+     @media(max-width:952px) {
+
+    .hero {
+        font-size: 10px;
+        padding-left: 10%;
+    }
+
+    nav ul li a h1{
+        font-size: 16px;
+    }
+}
+
+@media(max-width:857px){
+
+  .hero {
+        font-size: 2px;
+        padding-left: 8%;
+        width: auto;
+    }
+
+    .registroa {
+        display: flex;
+        flex-wrap: wrap;
+    }
+  }

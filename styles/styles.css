@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Signika+Negative:wght@300..700&display=swap');
+@import url(tienda.css);
+@import url(hero.css);
+@import url(galeria.css);
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  color: #050505;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  }
+
+h1{
+ display: flexbox;
+ align-items: center;
+ color: #000;
+ text-align: center;
+}
+
+h2 {
+color: rgb(250, 226, 5);
+display: flexbox;
+text-align: center;
+}
+
+p {
+  color: #fefefe;
+}
+
+dl {
+color: #fefefe;
+justify-content: center;
+  &
+
+  dt {
+
+color: #f1d908;
+  }
+}
+
+.inicio {
+    background-color: #0e0e0e;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold; 
+} 
+
+.enlaces {
+    margin-top: 15px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+
+    & a {
+        color: inherit; 
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 4px;
+        background-color: rgba(253, 253, 253, 0.818);
+        transition: background-color 0.3s;
+    }
+
+    & a:hover {
+        background-color: rgba(239, 193, 6, 0.932);
+    }
+}
+
+#jugadores {
+    background-color: #0e0e0e;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold; 
+} 
+
+
+.ingreso  {
+margin: 0.1%;
+padding: 0%;
+color: rgb(255, 238, 0);
+background-color: rgb(5, 5, 5);
+border-radius: 4px;
+}
+
+.boleto{
+position: fixed;
+top: 95%;
+left: 90%;
+width: 200px;
+height: 100px;
+}
+
+.boton{
+color: rgb(5, 5, 5);
+border-radius: 10px;
+}
+
+/* esto es de la pagina resgritro */
+
+.registroa {
+    /* display:flexbox; */
+    width: 90%;
+    background-color: #080808;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 50px;
+    border: 2px solid #fefefe;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    justify-content:left;
+}
+
+.jugadores {
+  justify-content: space-between;
+  text-align: center;
+  display: flex; 
+  flex-wrap: wrap;
+  gap: 10px; 
+  padding: 20px;
+  margin: 15 0;
+  min-width: 250px;
+
+
+
+ .jugadoresdt {
+  border: 1px solid #f1d908;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(246, 244, 241, 0.556);
+  max-width: 70%;
+  height: 100%;
+  
+}
+
+& 
+ h3 {
+    color: yellow;
+ }
+}
+
+.piedepagina {
+    background-color: #0e0e0e;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    
+
+    &
+
+    .piedepaginai {
+
+    margin-top: 15px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+
+    & a {
+        color: inherit; 
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 4px;
+        background-color: rgba(254, 204, 2, 0.99);
+        transition: background-color 0.3s;
+    }
+
+    & a:hover {
+        background-color: rgba(250, 250, 250, 0.932);
+    }
+  }
+ }
+
+  .galeriavideo{
+       width:max-content;
+       background-color: black;
+  }
+
+ @media(max-width:952px) {
+
+    .hero {
+        font-size: 10px;
+        padding-left: 10%;
+    }
+
+    nav ul li a h1{
+        font-size: 16px;
+    }
+}
+
+@media(max-width:857px){
+
+  .hero {
+        font-size: 20px;
+        padding-left: 100%;
+    }
+
+    .registroa {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .piedepagina{
+      display: inline-block;
+    }
+
+    .boleto{
+      display: inline;
+    }
+  }
