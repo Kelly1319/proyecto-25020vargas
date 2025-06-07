@@ -2,97 +2,69 @@
 @import url(hero.css);
 @import url(tienda.css);
 
-.galeria {
-  display: flex;
-  justify-content: center;
+ #galeria {
   background-color: #0e0e0e;
-  font-weight: bold; 
-  justify-content: space-between;
-  gap: 10px; 
-  padding: 20px;
-  margin: 15 0;
-  min-width: 2px;
-  
-   & 
-   h2 {
-   color: yellow;
-   text-align: center;
-   }
+  max-width: 100%;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
 
-   .galeriaimg{
-    display: inline-block;
-    flex-wrap: wrap;
-     border: 1px solid #f1d908;
-     border-radius: 10px;
-     padding: 10px;
-     box-shadow: 0 2px 5px rgba(246, 244, 241, 0.556);
-   
-  
-   }
-     .galeriavideo{
-       width:max-content;
-       background-color: black;
-     
-} 
+.galeria {
+  background-color: #0e0e0e;
+  margin-bottom: 2px;
+}
 
-@media(max-width:952px) {
+.imagen-responsiva {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 
-   .galeria{
-      display: contents;
-        font-size: 1px;
-        padding-left: 1%;
-        background-color: #0e0e0e;
-        height: inherit;
-        width:max-content;
-    }
+.video-container {
+  background-color: #0e0e0e;
+  position: relative;
+  padding-bottom: 56.25%; 
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
 
-   }
-    .galeriaimg {
-        font-size: 1px;
-        padding-left: 1%;
-        background-color: #0e0e0e;
-        height: inherit;
-        width: 100px;;
-    }
+.video-container iframe {
+  background-color: #0e0e0e;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+}
 
-    nav ul li a h1{
-        font-size: 16px;
-      
-    }
-
-      .galeriavideo {
-       width: auto;
-       background-color: #0e0e0e;
-
-    }
-  
-
-@media(max-width:857px){
-
-
- .galeria {
-        font-size: 0.25px;
-        padding-left: 1%;
-        object-fit: cover;
-        max-width: 50%;
-        max-height: 50%;
-    }
-
-    .galeriaimg {
-        font-size: 1px;
-        padding-left: 1%;
-        background-color: #0e0e0e;
-        object-fit:cover;;
-        max-width: 50%;
-        max-height: 50%;
-    }
-    }
-    
-    .galeriavideo {
-    width: auto;
+@media (max-width: 768px) {
+  #galeria {
+    padding: 15px;
     background-color: #0e0e0e;
+  }
 
-    }
-  
-   }
+  h2 {
+    font-size: 1.5rem;
+  }
 
+  .imagen-responsiva {
+    max-width: 90%;
+  }
+
+  .video-container {
+    padding-bottom: 56.25%; 
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .imagen-responsiva {
+    max-width: 100%;
+  }
+}
