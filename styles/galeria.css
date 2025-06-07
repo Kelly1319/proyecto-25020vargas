@@ -41,7 +41,7 @@
 @media (max-width: 768px) {
   #galeria {
     padding: 15px;
-  
+
   }
 
   h2 {
@@ -61,6 +61,7 @@
   h2 {
     font-size: 1.2rem;
   }
+
   .imagen-responsiva {
     max-width: 100%;
   }
