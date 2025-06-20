@@ -11,31 +11,29 @@
 }
 
 .galeria {
-  background-color: #0e0e0e;
-  margin-bottom: 2px;
-}
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 10px; 
+  }
 
-.imagen-responsiva {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
+  .galeria img {
+    width: 350px; 
+    height: auto; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease; 
+  }
+  .galeria img:hover {
+    transform: scale(1.05); 
+  }
 
-.video-container {
+video-container {
   position: relative;
   padding-bottom: 56.25%; 
   height: 0;
   overflow: hidden;
-  max-width: 100%;
-}
-
-.video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 50%;
+  max-width: 500%;
 }
 
 @media (max-width: 768px) {
