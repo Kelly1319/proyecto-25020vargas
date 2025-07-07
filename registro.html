@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="styles/hero.css">
     <link rel="stylesheet" href="styles/galeria.css">
     <link rel="stylesheet" href="styles/tienda.css">
+    <link rel="stylesheet" href="styles/registro.css">
+    <link rel="stylesheet" href="javascript/validacion.js">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
      <link rel="icon" href="imagenes/LOGO-3.png" type="image/png"> 
     <title>Deportivo Táchira</title>
@@ -26,9 +28,7 @@
                     <li><a href="tienda.html">Tienda DT</a></li>
                     <li><a href="https://deportivotachira.com/" target="_blank">Noticias</a></li>
             </ul> 
-          
-            <!-- formulario para ingreso -->     
-            <i class="ingreso"></i>
+  <i class="ingreso"></i>
             <form action="#" method="GET" class="ingreso">
                 <label for="user">Usuario:</label>
                 <input type="text" name="user" id="user" required>
@@ -36,43 +36,37 @@
                 <input type="password" name="password" id="password">
                 <input class="boton" type="submit" value="Ingresar con tu cuenta">
              </form>
-          
-        </header>
+   </header>
 
   
-<main>
-  <section class="inicio">
+<section class="inicio">
 
    <img src="imagenes/LOGO-3.png" alt="este es el logo del Dt" width="100" height="100">
    
   
-  <div class="registroa">
-    <form action="" class="form">
-      <h1 class="title">Registro</h1>
+<div class="registroa">
+  <form id="registroForm" class="form" novalidate>
+    <h1 class="title">Inicio de sección</h1>
 
-      <div class="inputContainer">
-        <input type="text" class="input" placeholder="a">
-        <label for="" class="label">Email</label>
-      </div>
+  
+    <div class="inputContainer">
+      <input type="email" placeholder="email "id="email" name="email" class="input" >
+      <label for="contrasena" class="label">Email</label>
+      <div class="error-text"></div>
+    </div>
 
-      <div class="inputContainer">
-        <input type="text" class="input" placeholder="a">
-        <label for="" class="label">Usuario</label>
-      </div>
+    <div class="inputContainer">
+      <input type="contraseña" id="contrasena" name="contraseña" class="input" placeholder="contraseña">
+      <label for="contrasena" class="label">Contraseña</label>
+      <div class="error-text"></div>
+    </div>
 
-      <div class="inputContainer">
-        <input type="text" class="input" placeholder="a">
-        <label for="" class="label">Contaseña</label>
-      </div>
+    <input type="submit" class="submitBtn" value="Enviar" />
+  </form>
+</div>
 
-      <input type="submit" class="submitBtn" value="Enviar">
-    </form>
-  </div>
-
-</section>
-
-  </main>
-
+</section> 
+<script src="validacion.js"></script>
    <footer class="piedepagina">
     <ul class="piedepaginai">
                     <li><a href="https://www.instagram.com/dvotachira/" target="_blank"><i class="fa-brands fa-instagram" style="color: #090909;"></i></a> </li>
@@ -83,5 +77,6 @@
     
     <p> © Copyright  @ 2025 </p>
    </footer>
+    
 </body>
 </html>
