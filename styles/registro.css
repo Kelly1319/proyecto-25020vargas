@@ -1,4 +1,4 @@
-*.registroa {
+.registroa {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,14 +82,68 @@ color: white;
   margin-bottom: 50px;
 }
 
-.error input:not(.check,.boton),.error select{
-     border: 1px solid #ff0000;
- } 
-                
-.error-text{
-        color: #ff0000;
-        font-size: 0.8rem;
-        margin-top:0px;
-        margin-bottom: 10px;
+/* Estilo para los campos con error */
+.error input {
+  border: 2px solid red;
+  background-color: #ffe6e6;
+}
+
+/* Estilo del texto de error */
+.error-text {
+  color: red;
+  font-size: 0.85rem;
+  margin-top: 4px;
+  font-style: italic;
+  display: block;
+}
+
+
+
+
+/*media querys para mobile PAGINA registrarse*/
+@media (max-width: 1200px) {
+    .bodyRegistrarse{
+        .headerRegistrarse{
+            padding:20px;
+            .anclaLogo{
+                font-size: 1rem;
+            }
+        }
+        .main{
+            .seccionRegistrarse{
+                width: 95%;
+                padding: 10px 10px;
+                .tituloRegistrarse{
+                    font-size: 2rem;
+                }
+               form{
+                width: 100%;
+                text-align: center;
+               
+                input:not(.check,.boton),select{
+                    width: 80%;
+                    height: 35px;
+                    font-size: 1rem;
+                }
+                .terminos{
+                    width: 80%;
+                    margin:0 auto;
+                    font-size: 0.7rem;
+                }
+                .boton{
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    width: 70%;
+                    padding: 0.8rem 0.8rem;
+                    font-size: 0.8rem;
+                }
+                .ayuda{
+                    text-align: left;
+                    font-size: 0.8rem;
+                }
+               }
+               
+            }
+        }
     }
-              
+}
