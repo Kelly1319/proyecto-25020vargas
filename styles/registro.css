@@ -1,106 +1,89 @@
+.inicio .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px; 
+    padding: 20px 0;
+}
+
+
 .registroa {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; 
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "lato", sans-serif;
-  color: white;
-  
-  &
-
-  h1{
-color: white;
-  }
+    background-color: rgb(0, 0, 0);
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    box-sizing: border-box;
 }
 
-.inputContainer {
-  position: relative;
-  height: 45px;
-  width: 90%;
-  margin-bottom: 17px;
+form h2 {
+    text-align: center;
+    color: #0f0f0e;
+    margin-bottom: 25px;
 }
 
-.input {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  height: 100%;
-  width: 100%;
-  border: 2px solid #f5f508;
-  border-radius: 7px;
-  font-size: 16px;
-  padding: 0 20px;
-  outline: none;
-  background: none;
-  z-index: 1;
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 6px;
+    border: 1.5px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: 0.3s;
 }
 
-::placeholder {
-  color: transparent;
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #eeff00;
+    box-shadow: 0 0 5px rgba(255, 217, 0, 0.2);
+    outline: none;
 }
 
-.submitBtn {
-  display: block;
-  margin-left: auto;
-  padding: 15px 30px;
-  border: none;
-  background-color: rgb(254, 246, 5);
-  color: rgb(0, 0, 0);
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 16px;
-  margin-top: 30px;
+input.boton {
+    width: 100%;
+    padding: 12px;
+    background-color: #ffe600;
+    color: rgb(10, 10, 10);
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.submitBtn:hover {
-  background-color: #fefefe;
+input.boton:hover {
+    background-color: #b0b300;
 }
 
-.form {
-  background-color: black;
-  width: 400px;
-  border-radius: 8px;
-  padding: 20px 40px;
-  box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+a.ayuda {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #ff0000;
+    text-decoration: none;
+    font-size: 0.95rem;
 }
 
-.input:focus + .label {
-  color:yellow;
-  top: -7px;
-  left: 3px;
-  z-index: 10;
-  font-size: 14px;
-  font-weight: 600;
-  color: rgb(248, 240, 30);
+a.ayuda:hover {
+    text-decoration: underline;
 }
 
-.title {
-  font-size: 50px;
-  margin-bottom: 50px;
-}
 
-/* Estilo para los campos con error */
-.error input {
-  border: 2px solid red;
-  background-color: #ffe6e6;
-}
-
-/* Estilo del texto de error */
 .error-text {
-  color: red;
-  font-size: 0.85rem;
-  margin-top: 4px;
-  font-style: italic;
-  display: block;
+    color: red;
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+    font-style: italic;
 }
 
 
+.error input {
+    border-color: red !important;
+    background-color: #ffe6e6;
+}
 
-
-/*media querys para mobile PAGINA registrarse*/
 @media (max-width: 1200px) {
     .bodyRegistrarse{
         .headerRegistrarse{
@@ -141,9 +124,9 @@ color: white;
                     text-align: left;
                     font-size: 0.8rem;
                 }
+                 }
                }
                
             }
         }
     }
-}
