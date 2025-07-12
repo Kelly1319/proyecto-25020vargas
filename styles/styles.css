@@ -38,6 +38,7 @@ justify-content: center;
 color: #f1d908;
   }
 }
+
 /* Estilos del botón hamburguesa */
 .menu-toggle {
   display: none;
@@ -52,7 +53,7 @@ color: #f1d908;
   z-index: 1100;
 }
 
-/* Menú de navegación */
+
 .enlaces {
   margin-top: 15px;
   padding: 0;
@@ -116,28 +117,6 @@ color: #f1d908;
     }
 } 
 
-.enlaces {
-    margin-top: 15px;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-
-    & a {
-        color: inherit; 
-        text-decoration: none;
-        padding: 5px 10px;
-        border-radius: 4px;
-        background-color: rgba(253, 253, 253, 0.818);
-        transition: background-color 0.3s;
-    }
-
-    & a:hover {
-        background-color: rgba(239, 193, 6, 0.932);
-    }
-}
 
 #jugadores {
     background-color: #0e0e0e;
