@@ -15,6 +15,12 @@
     flex-wrap: wrap;
     justify-content: center; 
     gap: 10px; 
+
+     &
+
+    h2{
+        color: #f1d908;
+    }
   }
 
   .galeria img {
@@ -28,13 +34,7 @@
     transform: scale(1.05); 
   }
 
-video-container {
-  position: relative;
-  padding-bottom: 56.25%; 
-  height: 0;
-  overflow: hidden;
-  max-width: 500%;
-}
+
 
 @media (max-width: 768px) {
   #galeria {

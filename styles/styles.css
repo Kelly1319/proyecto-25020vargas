@@ -38,6 +38,69 @@ justify-content: center;
 color: #f1d908;
   }
 }
+/* Estilos del botón hamburguesa */
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #000;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1100;
+}
+
+/* Menú de navegación */
+.enlaces {
+  margin-top: 15px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.enlaces a {
+  color: inherit;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  background-color: rgba(253, 253, 253, 0.818);
+  transition: background-color 0.3s;
+}
+
+.enlaces a:hover {
+  background-color: rgba(239, 193, 6, 0.932);
+}
+
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .enlaces {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 80px; 
+    right: 20px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1000;
+  }
+
+  .enlaces.activo {
+    display: flex;
+  }
+}
 
 .inicio {
     background-color: #0e0e0e;
@@ -45,6 +108,12 @@ color: #f1d908;
     padding: 10px;
     border-radius: 5px;
     font-weight: bold; 
+    
+    &
+
+    h2{
+        color: #f1d908;
+    }
 } 
 
 .enlaces {
@@ -76,8 +145,14 @@ color: #f1d908;
     padding: 10px;
     border-radius: 5px;
     font-weight: bold; 
-} 
+    width: auto;
+    &
 
+    h2 {
+        color: #f1d908;
+    }
+
+} 
 
 .ingreso  {
 margin: 0.1%;
@@ -111,7 +186,6 @@ border-radius: 10px;
   min-width: 250px;
 
 
-
  .jugadoresdt {
   border: 1px solid #f1d908;
   border-radius: 10px;
@@ -119,7 +193,6 @@ border-radius: 10px;
   box-shadow: 0 2px 5px rgba(246, 244, 241, 0.556);
   max-width: 70%;
   height: 100%;
-  
 }
 
 & 
@@ -156,41 +229,8 @@ border-radius: 10px;
         background-color: rgba(254, 204, 2, 0.99);
         transition: background-color 0.3s;
     }
-
     & a:hover {
         background-color: rgba(250, 250, 250, 0.932);
     }
-
-    @media (max-width: 768px) {
-        
-        .piedepaginai {
-            max-width: 100%;
-            gap: 1rem; 
-            flex-direction: column; 
-            align-items: center; 
-            margin-top: 0.5rem;
-            width: 100%;
-            & a {
-                font-size: 0.9rem; 
-                padding: 0.4rem 0.8rem;  
-                width: 100%; 
-                text-align: center; 
-            }
-        }
-    }
-
-   
-   @media (max-width: 480px) {
-        .piedepaginai {
-            gap: 0.5rem;
-
-            & a {
-                font-size: 0.8rem;
-                padding: 0.3rem 0.6rem;
-                width: 100%; 
-            }
-        }
-    }
-
-  }
- }
+}
+}

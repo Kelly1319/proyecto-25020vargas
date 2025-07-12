@@ -31,3 +31,12 @@
 }
 
 
+@media (max-width: 1200px) {
+    .section-productos .productos-container {
+        justify-content: space-around;
+    }
+    
+    .section-productos .productos-container .producto {
+        margin: 15px 10px;
+    }
+}

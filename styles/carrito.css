@@ -1,0 +1,30 @@
+.carrito-compras {
+  border: 1px solid #2e2e2d;
+  border-radius: 9px;
+  padding: 15px;
+  margin: 50px auto;        
+  width: 600px;
+  background-color: #080808;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(239, 225, 27, 0.2);
+  color:rgb(243, 243, 246);
+  
+  &
+  #total {
+    color: rgb(244, 12, 12);
+  }
+   &
+  p {
+    color: rgb(244, 12, 12);
+    
+  }
+}
+
+.carrito-compras ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.carrito-compras li {
+  margin-bottom: 8px;
+}
