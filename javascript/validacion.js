@@ -84,6 +84,7 @@ formulario.querySelectorAll('input').forEach(input => {
         } else {
             event.preventDefault();
             console.log("El formulario es valido y enviado");
+            alert('Inicio de sesión exitoso');
         }
     })
 })
