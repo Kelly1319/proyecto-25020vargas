@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     enlaces.classList.toggle('activo');
   });
 
-  // Cerrar menú al hacer clic en un enlace
+ 
   enlaces.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
       enlaces.classList.remove('activo');
