@@ -8,23 +8,30 @@
     <link rel="stylesheet" href="styles/hero.css">
     <link rel="stylesheet" href="styles/galeria.css">
     <link rel="stylesheet" href="styles/tienda.css">
+     <link rel="stylesheet" href="styles/carrito.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" href="imagenes/LOGO-3.png" type="image/png"> 
     <title>Deportivo Táchira</title>
 </head>
 <body>
-    <a href="#" class="boleto"><i class="fa-solid fa-cart-shopping fa-2xl" style="color: #fcfcfc;"></i></a>
+    <a href="carrito.html" class="boleto"><i class="fa-solid fa-cart-shopping fa-2xl" style="color: #fcfcfc;"></i></a>
         <header>
             <a  href="index.html"><img src="imagenes/logo.jpg" alt="Logo del deportivo tachira"></a>
             <h1>Deportivo Táchira</h1> 
-            <ul class="enlaces">
-                    <li><a href="index.html">Inicio</a> </li>
-                    <li><a href="#jugadores">Jugadores</a></li>
-                    <li><a href="#galeria">Galeria</a></li>
-                    <li><a href="registro.html">Registro</a></li>
-                    <li><a href="tienda.html">Tienda DT</a></li>
-                    <li><a href="https://deportivotachira.com/" target="_blank">Noticias</a></li>
-            </ul> 
+            <!-- boton hamburguesa --> 
+            <button class="menu-toggle" id="menu-toggle">
+    <i class="fas fa-bars"></i>
+  </button>
+  
+  <ul class="enlaces">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="#jugadores">Jugadores</a></li>
+    <li><a href="#galeria">Galeria</a></li>
+    <li><a href="registro.html">Registro</a></li>
+    <li><a href="tienda.html">Tienda DT</a></li>
+    <li><a href="carrito.html">Ver carrito</a></li>
+    <li><a href="https://deportivotachira.com/" target="_blank">Noticias</a></li>
+  </ul>
           
             <!-- formulario para ingreso -->     
             <i class="ingreso"></i>
@@ -152,10 +159,10 @@
                     <li><a href="https://www.facebook.com/DeportivoTachiraFutbolClub/?locale=es_LA" target="_blank"><i class="fa-brands fa-facebook" style="color: #090909;"></i></a></li>
                     <li><a href="https://x.com/dvotachira" target="_blank"><i class="fa-brands fa-x-twitter" style="color: #090909;"></i></a></li>
                     <li><a href="https://deportivotachira.com/" target="_blank"><i class="fa-solid fa-newspaper" style="color: #090909;"></i></a></li>
+                    <li><a href="mailto:kellyk.vargas@gmail.com" target="_blank" rel="noopener noreferrer"> <i class="fa-solid fa-envelope" style="color: #050505;"></i></a></li>
+                    <li><a href="https://wa.me/541133413033" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp fa-xl" style="color:#090909;"></i></a></li>
             </ul> 
-    
-    <p> © Copyright  @ 2025 </p>
  </footer>
- <script src="galeria.js"></script>
+ <script src="javascript/menu.js"></script>
 </body>
 </html>
