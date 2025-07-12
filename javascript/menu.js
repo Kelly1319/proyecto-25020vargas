@@ -6,3 +6,9 @@ document.addEventListener("DOMContentLoaded", function () {
     enlaces.classList.toggle("activo");
   });
 });
+
+  document.querySelectorAll('#enlaces a').forEach(link => {
+    link.addEventListener('click', () => {
+      enlaces.classList.remove('activo');
+    });
+  });
