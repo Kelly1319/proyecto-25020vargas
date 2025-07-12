@@ -8,22 +8,27 @@
     <link rel="stylesheet" href="styles/hero.css">
     <link rel="stylesheet" href="styles/galeria.css">
     <link rel="stylesheet" href="styles/tienda.css">
+     <link rel="stylesheet" href="styles/carrito.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
      <link rel="icon" href="imagenes/LOGO-3.png" type="image/png"> 
     <title>Deportivo Táchira</title>   
 </head>
 <body>
-    <a href="#" class="boleto"><i class="fa-solid fa-cart-shopping fa-2xl" style="color: #040404;"></i></a>
+    <a href="carrito.html" class="boleto"><i class="fa-solid fa-cart-shopping fa-2xl" style="color: #040404;"></i></a>
     <header class="banner">
      <a href="index.html"><img src="imagenes/logo.jpg" alt="Logo del deportivo tachira"></a>
         <h1>Deportivo Táchira</h1> 
-        <ul class="enlaces">
+        <button class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+            </button>
+            <ul class="enlaces"  id="navbar">
             <li><a href="index.html">Inicio</a> </li>
             <li><a href="index.html">Jugadores</a></li>
             <li><a href="index.html">Galeria</a></li>
             <li><a href="registro.html">Registro</a></li>
             <li><a href="tienda.html">Tienda</a></li>
+            <li><a href="carrito.html">Ver carrito</a></li>
             <li><a href="https://deportivotachira.com/" target="_blank">Noticias</a></li>
         </ul> 
         <i class="ingreso"></i>
@@ -36,79 +41,87 @@
              </form>
     </header>    
 <main>
-       <section class="todosproductos">
-        <h1>Tienda Aurinegra</h1>
-<!-- producto 1 -->
-         <div class="productos">
-                <div class="producto">
-                    <img src="imagenes/camisa.png" alt="camisa del deportivo tachira titular">
-                    <div class="producto-descripcion">
-                        <span>Camisa</span>
-                        <h5>camisa del deportivo tachira.</h5>
-                        <h4>25.000$</h4>
-                    </div>
-                    <a href="#" class="carrito">
-                        <i class="fal fa-shopping-cart"></i>
-                    </a>
-                </div>
-<!-- producto 2 -->
-                <div class="producto">
-                    <img src="imagenes/chaqueta.jpg" alt="campera del deportivo tachira">
-                    <div class="producto-descripcion">
-                        <span>Campera</span>
-                        <h5>Campera del deportivo tachira</h5>
-                        <h4>70.000$</h4>
-                    </div>
-                    <a href="#" class="carrito">
-                        <i class="fal fa-shopping-cart"></i>
-                    </a>
-                </div>
-<!-- producto 3 -->
-                <div class="producto">
-                    <img src="imagenes/camiseta.jpg" alt="camisa manga larga del deportivo tachira ">
-                    <div class="producto-descripcion">
-                        <span>Camiseta</span>
-                        <h5>Camisa de coleccion</h5>
-                        <h4>50.000$</h4>
-                    </div>
-                    <a href="#" class="carrito">
-                        <i class="fal fa-shopping-cart"></i>
-                    </a>
-                </div>
-<!-- producto 4 -->
-                <div class="producto">
-                    <img src="imagenes/gorra.jpg" alt="gorra">
-                    <div class="producto-descripcion">
-                        <span>Gorra</span>
-                        <h5>Gorra negra</h5>
-                        <h4>15.000$</h4>
-                    </div>
-                    <a href="#" class="carrito">
-                        <i class="fal fa-shopping-cart"></i>
-                    </a>
-                </div>
-<!-- producto 5 -->
-                <div class="producto">
-                    <img src="imagenes/guantes.jpg" alt="guantes">
-                    <div class="producto-descripcion">
-                        <span>Guantes</span>
-                        <h5>Guantes talle Xl</h5>
-                        <h4>20.000$</h4>
-                    </div>
-                    <a href="#" class="carrito">
-                        <i class="fal fa-shopping-cart"></i>
-                    </a>
-                </div>
+    <section class="todosproductos">
+      <h1>Tienda Aurinegra</h1>
+
+      <div class="productos">
+
+        <div class="producto">
+          <img src="imagenes/camisa.png" alt="camisa del deportivo tachira titular" />
+          <div class="producto-descripcion">
+            <span>Camisa</span>
+            <h5>camisa del deportivo tachira.</h5>
+            <h4>25.000$</h4>
+          </div>
+          <a href="#" class="carrito" data-id="1">
+            <i class="fal fa-shopping-cart"></i>
+          </a>
+        </div>
+
+        <div class="producto">
+          <img src="imagenes/chaqueta.jpg" alt="campera del deportivo tachira" />
+          <div class="producto-descripcion">
+            <span>Campera</span>
+            <h5>Campera del deportivo tachira</h5>
+            <h4>70.000$</h4>
+          </div>
+          <a href="#" class="carrito" data-id="2">
+            <i class="fal fa-shopping-cart"></i>
+          </a>
+        </div>
+
+        <div class="producto">
+          <img src="imagenes/camiseta.jpg" alt="camisa manga larga del deportivo tachira" />
+          <div class="producto-descripcion">
+            <span>Camiseta</span>
+            <h5>Camisa de coleccion</h5>
+            <h4>50.000$</h4>
+          </div>
+          <a href="#" class="carrito" data-id="3">
+            <i class="fal fa-shopping-cart"></i>
+          </a>
+        </div>
+
+        <div class="producto">
+          <img src="imagenes/gorra.jpg" alt="gorra" />
+          <div class="producto-descripcion">
+            <span>Gorra</span>
+            <h5>Gorra negra</h5>
+            <h4>15.000$</h4>
+          </div>
+          <a href="#" class="carrito" data-id="4">
+            <i class="fal fa-shopping-cart"></i>
+          </a>
+        </div>
+
+        <div class="producto">
+          <img src="imagenes/guantes.jpg" alt="guantes" />
+          <div class="producto-descripcion">
+            <span>Guantes</span>
+            <h5>Guantes talle Xl</h5>
+            <h4>20.000$</h4>
+          </div>
+          <a href="#" class="carrito" data-id="5">
+            <i class="fal fa-shopping-cart"></i>
+          </a>
+        </div>
+
+      </div>
     </section>
-        </main>
-<footer class="piedepagina">
+  </main>
+
+ <footer class="piedepagina">
     <ul class="piedepaginai">
                     <li><a href="https://www.instagram.com/dvotachira/" target="_blank"><i class="fa-brands fa-instagram" style="color: #090909;"></i></a> </li>
                     <li><a href="https://www.facebook.com/DeportivoTachiraFutbolClub/?locale=es_LA" target="_blank"><i class="fa-brands fa-facebook" style="color: #090909;"></i></a></li>
                     <li><a href="https://x.com/dvotachira" target="_blank"><i class="fa-brands fa-x-twitter" style="color: #090909;"></i></a></li>
                     <li><a href="https://deportivotachira.com/" target="_blank"><i class="fa-solid fa-newspaper" style="color: #090909;"></i></a></li>
+                    <li><a href="mailto:kellyk.vargas@gmail.com" target="_blank" rel="noopener noreferrer"> <i class="fa-solid fa-envelope" style="color: #050505;"></i></a></li>
+                    <li><a href="https://wa.me/541133413033" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp fa-xl" style="color:#090909;"></i></a></li>
             </ul> 
-    <p> © Copyright  @ 2025 </p>
  </footer>
- </body>
+     <script src="javascript/menu.js"></script>
+     <script src="javascript/tienda.js"></script>
+     <script src="javascript/carrito.js"></script>
+</body>
 </html>
